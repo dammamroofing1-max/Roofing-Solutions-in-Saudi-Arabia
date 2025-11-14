@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>قرميد الشرقية | خدمات تركيب وصيانة الأسقف</title>
-<meta name="description" content="قرميد الشرقية – تركيب القرميد، صيانة الأسطح، إصلاح تسربات المياه، العزل المائي، وتركيب الأسقف في مدينة عنك والشرقية." />
+<meta name="description" content="قرميد الشرقية – تركيب القرميد، صيانة الأسطح، إصلاح التسربات، والعزل المائي في عنك والشرقية." />
 <style>
  body {
    font-family: sans-serif;
    margin: 0;
-   background: #f5f5f5;
+   background: #f4f4f4;
    color: #222;
  }
  header {
    background: #b32020;
    color: #fff;
-   padding: 20px;
+   padding: 25px;
    text-align: center;
  }
  .hero {
@@ -24,7 +24,7 @@
  }
  .hero img {
    width: 100%;
-   max-height: 520px;
+   max-height: 500px;
    object-fit: cover;
  }
  .hero-text {
@@ -32,10 +32,10 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background: rgba(0,0,0,0.5);
-   color: #fff;
+   background: rgba(0,0,0,0.55);
    padding: 20px 35px;
    border-radius: 8px;
+   color: #fff;
  }
  section {
    padding: 40px 20px;
@@ -44,23 +44,25 @@
  }
  .services-grid {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
    gap: 20px;
  }
  .service-box {
    background: #fff;
-   padding: 20px;
+   padding: 18px;
    border-radius: 8px;
-   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+   box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+   font-weight: bold;
+   text-align: center;
  }
  footer {
    background: #111;
-   color: #fff;
-   padding: 30px;
+   color: #eee;
+   padding: 25px;
    text-align: center;
    margin-top: 40px;
  }
- /* Floating WhatsApp Button */
+ /* Floating WhatsApp */
  #whatsapp-btn {
    position: fixed;
    bottom: 20px;
@@ -85,14 +87,13 @@
    50% { transform: translateY(-8px); }
    100% { transform: translateY(0); }
  }
- /* Popup */
  #popup {
    position: fixed;
    bottom: 100px;
    left: 20px;
    background: #25D366;
    color: #fff;
-   padding: 15px 20px;
+   padding: 12px 18px;
    border-radius: 8px;
    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
    display: none;
@@ -109,7 +110,7 @@
 <div class="hero">
   <img src="main image.png" alt="Roofing Work" />
   <div class="hero-text">
-    <h2>خبرة – جودة – التزام</h2>
+    <h2>جودة – التزام – خبرة</h2>
     <p>0548015424</p>
   </div>
 </div>
@@ -117,7 +118,7 @@
 <section>
   <h2>نبذة عن خدماتنا</h2>
   <p>
-    نقدم خدمات تركيب القرميد، إصلاح التسربات، العزل المائي، صيانة الأسقف، وتركيب الهياكل الخشبية بجودة عالية تناسب مناخ المنطقة.
+    نقدم حلولًا متكاملة في تركيب القرميد، العزل المائي، إصلاح تسربات الأسطح، استبدال الأسقف القديمة، وصيانة الأسطح بما يناسب مناخ المنطقة وجودة التنفيذ المطلوبة.
   </p>
 </section>
 
@@ -128,8 +129,8 @@
     <div class="service-box">إصلاح تسربات المياه</div>
     <div class="service-box">العزل المائي</div>
     <div class="service-box">صيانة الأسقف</div>
-    <div class="service-box">تركيب الأسقف المعدنية</div>
     <div class="service-box">استبدال الأسقف القديمة</div>
+    <div class="service-box">تركيب الأسقف المعدنية</div>
   </div>
 </section>
 
@@ -137,25 +138,25 @@
   <p>© 2025 قرميد الشرقية – جميع الحقوق محفوظة</p>
 </footer>
 
-<!-- WhatsApp Floating Button -->
+<!-- WhatsApp Button -->
 <div id="whatsapp-btn" onclick="openPopup()">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
 </div>
 
-<div id="popup">راسلنا الآن على واتساب</div>
+<div id="popup">تواصل معنا عبر واتساب</div>
 
 <script>
 function openPopup() {
   window.open("https://wa.me/966548015424", "_blank");
 }
 
-// Auto popup on hover
 const btn = document.getElementById("whatsapp-btn");
 const popup = document.getElementById("popup");
 
 btn.addEventListener("mouseenter", () => {
   popup.style.display = "block";
 });
+
 btn.addEventListener("mouseleave", () => {
   popup.style.display = "none";
 });
